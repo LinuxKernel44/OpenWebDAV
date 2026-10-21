@@ -104,7 +104,8 @@ class WebDavClient(
 
     private fun toEntries(dir: HttpUrl, responses: List<RawResponse>): List<DavEntry> {
         val dirSegments = dir.cleanSegments()
-        return responses.mapNotNull { raw ->
+        // Some servers (Real-Debrid included) list the same entry twice; the UI needs unique keys.
+        return responses.distinctBy { dir.resolve(it.href)?.cleanSegments() }.mapNotNull { raw ->
             val resolved = dir.resolve(raw.href) ?: return@mapNotNull null
             val segments = resolved.cleanSegments()
             if (segments == dirSegments) return@mapNotNull null // the folder itself

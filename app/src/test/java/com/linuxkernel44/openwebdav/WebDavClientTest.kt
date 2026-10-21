@@ -55,6 +55,17 @@ class WebDavClientTest {
     }
 
     @Test
+    fun duplicateEntriesAreListedOnce() = runBlocking {
+        val dup = """<d:multistatus xmlns:d="DAV:">
+<d:response><d:href>/dav/Show/</d:href><d:propstat><d:prop><d:resourcetype><d:collection/></d:resourcetype></d:prop></d:propstat></d:response>
+<d:response><d:href>/dav/Show/</d:href><d:propstat><d:prop><d:resourcetype><d:collection/></d:resourcetype></d:prop></d:propstat></d:response>
+<d:response><d:href>/dav/a.mkv</d:href><d:propstat><d:prop><d:resourcetype/></d:prop></d:propstat></d:response>
+</d:multistatus>"""
+        server.enqueue(MockResponse().setResponseCode(207).setBody(dup))
+        assertEquals(listOf("Show", "a.mkv"), client.list(server.url("/dav/")).map { it.name })
+    }
+
+    @Test
     fun mapsHttpStatusesToErrors() = runBlocking {
         server.enqueue(MockResponse().setResponseCode(401))
         server.enqueue(MockResponse().setResponseCode(404))

@@ -33,7 +33,7 @@ and works with any WebDAV server served over HTTPS.
 
 ## Install
 
-Download `OpenWebDAV-1.0.0.apk` from the [latest release](https://github.com/LinuxKernel44/OpenWebDAV/releases/latest)
+Download `OpenWebDAV-1.0.1.apk` from the [latest release](https://github.com/LinuxKernel44/OpenWebDAV/releases/latest)
 and open it on your device. Android 8.0 (API 26) or newer is required.
 
 ## Usage

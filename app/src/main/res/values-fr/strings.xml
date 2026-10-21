@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Login -->
+    <string name="login_title">Connectez-vous à votre WebDAV</string>
+    <string name="login_subtitle">Saisissez l\'URL, le nom d\'utilisateur et le mot de passe fournis par Real-Debrid, ou par n\'importe quel autre serveur WebDAV.</string>
+    <string name="field_url">URL du serveur</string>
+    <string name="field_url_placeholder">https://dav.exemple.com</string>
+    <string name="field_username">Nom d\'utilisateur</string>
+    <string name="field_password">Mot de passe</string>
+    <string name="show_password">Afficher le mot de passe</string>
+    <string name="hide_password">Masquer le mot de passe</string>
+    <string name="connect">Se connecter</string>
+
+    <!-- Errors -->
+    <string name="error_invalid_url">Saisissez une URL https:// valide.</string>
+    <string name="error_auth">Échec de l\'authentification. Vérifiez votre nom d\'utilisateur et votre mot de passe.</string>
+    <string name="error_network">Impossible de joindre le serveur. Vérifiez votre connexion et l\'URL.</string>
+    <string name="error_not_found">Ce dossier est introuvable sur le serveur.</string>
+    <string name="error_server">Le serveur a renvoyé une erreur (%1$d).</string>
+    <string name="error_parse">Le serveur a envoyé une réponse illisible.</string>
+    <string name="retry">Réessayer</string>
+
+    <!-- Browser -->
+    <string name="navigate_up">Retour</string>
+    <string name="search">Rechercher</string>
+    <string name="search_placeholder">Rechercher dans ce dossier</string>
+    <string name="close_search">Fermer la recherche</string>
+    <string name="sort">Trier</string>
+    <string name="sort_by">Trier par</string>
+    <string name="sort_name">Nom</string>
+    <string name="sort_date">Date</string>
+    <string name="sort_size">Taille</string>
+    <string name="sort_ascending">Croissant</string>
+    <string name="sort_descending">Décroissant</string>
+    <string name="settings">Paramètres</string>
+    <string name="more_actions">Plus d\'actions</string>
+    <string name="empty_folder">Ce dossier est vide</string>
+    <string name="no_results">Aucun fichier ne correspond à votre recherche</string>
+    <string name="items_count">%1$d éléments</string>
+
+    <!-- File actions -->
+    <string name="action_open_with">Ouvrir avec…</string>
+    <string name="action_download">Télécharger</string>
+    <string name="action_copy_link">Copier le lien</string>
+    <string name="action_share_link">Partager le lien</string>
+    <string name="link_copied">Lien copié</string>
+    <string name="share_title">Partager le lien</string>
+    <string name="opening_file">Ouverture de %1$s…</string>
+    <string name="cancel">Annuler</string>
+    <string name="no_app_found">Aucune application trouvée pour ouvrir ce fichier.</string>
+    <string name="vlc_missing_title">VLC n\'est pas installé</string>
+    <string name="vlc_missing_message">OpenWebDAV lit les vidéos avec VLC pour Android. Installez-le pour commencer à regarder.</string>
+    <string name="install_play_store">Google Play</string>
+    <string name="install_f_droid">F-Droid</string>
+
+    <!-- Downloads -->
+    <string name="download_started">Téléchargement démarré</string>
+    <string name="download_complete">Téléchargement terminé</string>
+    <string name="download_failed">Échec du téléchargement</string>
+    <string name="download_channel_name">Téléchargements</string>
+    <string name="download_channel_description">Progression des téléchargements de fichiers</string>
+    <string name="storage_permission_denied">L\'autorisation de stockage est nécessaire pour télécharger des fichiers sur cette version d\'Android.</string>
+
+    <!-- Settings -->
+    <string name="appearance">Apparence</string>
+    <string name="theme">Thème</string>
+    <string name="theme_dark">Sombre</string>
+    <string name="theme_light">Clair</string>
+    <string name="language">Langue</string>
+    <string name="language_auto">Automatique</string>
+    <string name="account">Compte</string>
+    <string name="signed_in_as">Connecté en tant que %1$s</string>
+    <string name="log_out">Se déconnecter</string>
+    <string name="log_out_title">Se déconnecter ?</string>
+    <string name="log_out_message">Cela supprimera aussi l\'URL, le nom d\'utilisateur et le mot de passe enregistrés sur cet appareil.</string>
+    <string name="about">À propos</string>
+    <string name="version">Version %1$s</string>
+    <string name="source_code">Code source sur GitHub</string>
+    <string name="disclaimer">OpenWebDAV est un projet indépendant. Il n\'est affilié ni à Real-Debrid ni à VideoLAN.</string>
+</resources>
